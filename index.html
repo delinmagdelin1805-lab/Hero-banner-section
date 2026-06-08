@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Banner</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    .hero{
+      width:100%;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:50px 10%;
+      background:linear-gradient(to right, #0f172a, #1e293b);
+      color:white;
+      flex-wrap:wrap;
+      gap:40px;
+    }
+
+    .hero-text{
+      flex:1;
+      min-width:300px;
+    }
+
+    .hero-text h1{
+      font-size:55px;
+      margin-bottom:20px;
+      line-height:1.2;
+    }
+
+    .hero-text span{
+      color:#38bdf8;
+    }
+
+    .hero-text p{
+      font-size:18px;
+      line-height:1.7;
+      margin-bottom:30px;
+      color:#d1d5db;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 28px;
+      border:none;
+      border-radius:8px;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .btn-primary{
+      background:#38bdf8;
+      color:white;
+    }
+
+    .btn-primary:hover{
+      background:#0ea5e9;
+      transform:translateY(-3px);
+    }
+
+    .btn-secondary{
+      border:2px solid #38bdf8;
+      color:#38bdf8;
+      background:transparent;
+    }
+
+    .btn-secondary:hover{
+      background:#38bdf8;
+      color:white;
+      transform:translateY(-3px);
+    }
+
+    .hero-image{
+      flex:1;
+      text-align:center;
+      min-width:300px;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:500px;
+      border-radius:20px;
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        text-align:center;
+        padding-top:100px;
+      }
+
+      .hero-text h1{
+        font-size:40px;
+      }
+
+      .hero-buttons{
+        justify-content:center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>Create Modern <span>Websites</span></h1>
+
+      <p>
+        Build responsive and beautiful websites using HTML, CSS, and JavaScript.
+        Create professional UI designs for your portfolio and projects.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Get Started</a>
+
+        <a href="#" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+      alt="Hero Image">
+    </div>
+
+  </section>
+
+</body>
+</html>
